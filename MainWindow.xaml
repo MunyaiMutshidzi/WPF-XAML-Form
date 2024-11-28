@@ -1,0 +1,55 @@
+﻿<Window x:Name="MainForm" x:Class="WPF__XAML_Form.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF__XAML_Form"
+        mc:Ignorable="d"
+        Title="PAN-AFRICA" Height="453.293" Width="796.707" WindowStartupLocation="CenterScreen" Cursor="Arrow"
+         WindowState='Normal' Topmost='True'
+        ResizeMode='CanResize'  SizeToContent='Manual' ShowInTaskbar='False'  >
+
+    <Window.Background>
+        <ImageBrush ImageSource="9d26048e191da4006a2c5e6e724a486a.gif" Stretch="Uniform"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="477*"/>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="66*"/>
+        </Grid.ColumnDefinitions>
+        <!-- Using comment in the XAML coding language-->
+        <TextBox x:Name="TxtName" Text=" " Margin="37,20,277,372" RenderTransformOrigin="0.494,0.496" Grid.Column="2" FontWeight="Bold" TabIndex="1" Foreground="Black" Background="#FFAA7F7F">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.122"/>
+                    <RotateTransform Angle="0.333"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="BtnLogin" Content="Log in" HorizontalAlignment="Left" Margin="28,287,0,0" VerticalAlignment="Top" Width="209" Height="29" Background="#FF8172E2" FontFamily="Showcard Gothic" RenderTransformOrigin="0.472,0.387" Grid.ColumnSpan="3" Click="Click_Login" TabIndex="6" Panel.ZIndex="1">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-23.94"/>
+                    <RotateTransform Angle="-0.622"/>
+                    <TranslateTransform X="7.933" Y="0.545"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock x:Name="LblName" Grid.Column="1" HorizontalAlignment="Left" Margin="10,21,0,0" TextWrapping="Wrap" Text="Enter the name:" VerticalAlignment="Top" Width="115" Height="18" Grid.ColumnSpan="2" FontWeight="Bold" Background="#FF078023"/>
+        <TextBox x:Name="TxtSchool" Text=" " Margin="37,114,277,278" RenderTransformOrigin="0.494,0.496" Grid.Column="2" FontWeight="Bold" TabIndex="3" Foreground="Black" Background="#FFAA7F7F"/>
+        <TextBlock x:Name="LblSchool" Grid.Column="1" HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Enter school name:" VerticalAlignment="Top" Width="115" Height="18" Grid.ColumnSpan="2" FontWeight="Bold" Background="#FF078023"/>
+        <TextBox x:Name="TxtLocation" Text=" " Margin="37,67,277,325" RenderTransformOrigin="0.494,0.496" Grid.Column="2" FontWeight="Bold" TabIndex="1" Foreground="Black" Background="#FFAA7F7F"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="Enter the name:" VerticalAlignment="Top" Width="115" Height="18" Grid.ColumnSpan="2" FontWeight="Bold" Background="#FF078023"/>
+        <TextBlock x:Name="LblLocation" Grid.Column="1" HorizontalAlignment="Left" Margin="10,68,0,0" TextWrapping="Wrap" Text="Enter Location:" VerticalAlignment="Top" Width="115" Height="18" Grid.ColumnSpan="2" FontWeight="Bold" Background="#FF078023"/>
+        <TextBox x:Name="TxtCellPhone" Text=" " Margin="37,160,277,232" RenderTransformOrigin="0.494,0.496" Grid.Column="2" FontWeight="Bold" TabIndex="4" Foreground="Black" Background="#FFAA7F7F"/>
+        <TextBlock x:Name="LblCellNo" Grid.Column="1" HorizontalAlignment="Left" Margin="10,161,0,0" TextWrapping="Wrap" Text="Enter Cell No:" VerticalAlignment="Top" Width="115" Height="18" Grid.ColumnSpan="2" FontWeight="Bold" Background="#FF078023"/>
+        <TextBox x:Name="TxtEmail" Text=" " Margin="37,219,277,173" RenderTransformOrigin="0.494,0.496" Grid.Column="2" FontWeight="Bold" TabIndex="5" Foreground="Black" Background="#FFAA7F7F"/>
+        <TextBlock x:Name="LblEmail" Grid.Column="1" HorizontalAlignment="Left" Margin="10,220,0,0" TextWrapping="Wrap" Text="Enter Email:" VerticalAlignment="Top" Width="115" Height="18" Grid.ColumnSpan="2" FontWeight="Bold" Background="#FF078023"/>
+    </Grid>
+</Window>
